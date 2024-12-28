@@ -1,0 +1,50 @@
+{
+  "name": "esbuild-shim-plugin",
+  "version": "0.0.0",
+  "description": "A plugin for esbuild to shim imports for commonjs and esm modules.",
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "shim",
+    "import",
+    "require"
+  ],
+  "homepage": "https://github.com/shahradelahi/esbuild-shim-plugin",
+  "repository": "github:shahradelahi/esbuild-shim-plugin",
+  "license": "MIT",
+  "author": "Shahrad Elahi <shahrad@litehex.com> (https://github.com/shahradelahi)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "!dist/*.d.cts"
+  ],
+  "scripts": {
+    "build": "tsup --clean --dts --format cjs,esm index.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "pnpm typecheck && eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepublishOnly": "pnpm lint && pnpm format:check && pnpm build",
+    "typecheck": "tsc --noEmit"
+  },
+  "prettier": "@shahrad/prettier-config",
+  "devDependencies": {
+    "@shahrad/eslint-config": "^1.0.0",
+    "@shahrad/prettier-config": "^1.1.0",
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "esbuild": "^0.24.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "pnpm@9.15.1"
+}

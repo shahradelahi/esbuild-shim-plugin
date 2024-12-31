@@ -1,6 +1,6 @@
 {
   "name": "esbuild-shim-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for esbuild to shim imports for commonjs and esm modules.",
   "keywords": [
     "esbuild",

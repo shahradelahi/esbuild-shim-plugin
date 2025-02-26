@@ -40,7 +40,7 @@
     "@shahrad/eslint-config": "^1.0.0",
     "@shahrad/prettier-config": "^1.1.0",
     "@sindresorhus/tsconfig": "^7.0.0",
-    "esbuild": "^0.24.2",
+    "esbuild": "^0.25.0",
     "eslint": "^9.17.0",
     "prettier": "^3.4.2",
     "tsup": "^8.3.5",

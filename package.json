@@ -38,13 +38,15 @@
   "prettier": "@shahrad/prettier-config",
   "devDependencies": {
     "@shahrad/eslint-config": "^1.0.0",
-    "@shahrad/prettier-config": "^1.1.0",
+    "@shahrad/prettier-config": "^1.2.2",
     "@sindresorhus/tsconfig": "^7.0.0",
-    "esbuild": "^0.24.2",
-    "eslint": "^9.17.0",
-    "prettier": "^3.4.2",
-    "tsup": "^8.3.5",
-    "typescript": "^5.7.2"
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
   },
-  "packageManager": "pnpm@9.15.1"
+  "peerDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "packageManager": "pnpm@9.15.9"
 }

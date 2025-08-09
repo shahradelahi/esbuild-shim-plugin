@@ -39,7 +39,7 @@
   "devDependencies": {
     "@shahrad/eslint-config": "^1.0.0",
     "@shahrad/prettier-config": "^1.2.2",
-    "@sindresorhus/tsconfig": "^7.0.0",
+    "@sindresorhus/tsconfig": "^8.0.0",
     "eslint": "^9.23.0",
     "prettier": "^3.5.3",
     "tsup": "^8.4.0",

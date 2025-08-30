@@ -32,21 +32,21 @@
     "format:check": "prettier --check .",
     "lint": "pnpm typecheck && eslint .",
     "lint:fix": "eslint --fix .",
-    "prepublishOnly": "pnpm lint && pnpm format:check && pnpm build",
+    "prepublishOnly": "pnpm build && pnpm lint && pnpm format:check",
     "typecheck": "tsc --noEmit"
   },
   "prettier": "@shahrad/prettier-config",
+  "dependencies": {
+    "esbuild": "^0.25.9"
+  },
   "devDependencies": {
     "@shahrad/eslint-config": "^1.0.0",
     "@shahrad/prettier-config": "^1.2.2",
-    "@sindresorhus/tsconfig": "^7.0.0",
-    "eslint": "^9.23.0",
-    "prettier": "^3.5.3",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.2"
+    "@shahrad/tsconfig": "^1.2.0",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
   },
-  "peerDependencies": {
-    "esbuild": "^0.25.0"
-  },
-  "packageManager": "pnpm@9.15.9"
+  "packageManager": "pnpm@10.15.0"
 }

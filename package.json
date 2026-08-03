@@ -35,25 +35,25 @@
     "format:check": "prettier --check .",
     "lint": "pnpm typecheck && eslint .",
     "lint:fix": "eslint --fix .",
-    "prepublishOnly": "pnpm build && pnpm lint && pnpm format:check && pnpm test",
-    "test": "vitest --run",
+    "prepublishOnly": "pnpm build && pnpm lint && pnpm format:check",
     "typecheck": "tsc --noEmit"
   },
   "prettier": "@shahrad/prettier-config",
-  "dependencies": {
-    "esbuild": "^0.25.9"
-  },
   "devDependencies": {
-    "@changesets/cli": "^2.29.8",
-    "@shahrad/eslint-config": "^1.0.0",
+    "@changesets/cli": "^2.31.1",
+    "@shahrad/eslint-config": "^1.1.0",
     "@shahrad/prettier-config": "^1.2.2",
-    "@shahrad/tsconfig": "^1.2.0",
-    "eslint": "^9.34.0",
-    "prettier": "^3.6.2",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.2"
+    "@shahrad/tsconfig": "^1.3.0",
+    "esbuild": "^0.28.1",
+    "eslint": "^10.8.0",
+    "prettier": "^3.9.6",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@10.15.0",
+  "peerDependencies": {
+    "esbuild": ">=0.18.0"
+  },
+  "packageManager": "pnpm@10.34.5+sha512.a4ee05f2f73658255bd6a89859c065a45c28a57daefae2c893a168ee2b73168c37b91e83e57ea67654ad03f03031746430e8bce38e362e042605fb8abc80192e",
   "publishConfig": {
     "access": "public",
     "provenance": true

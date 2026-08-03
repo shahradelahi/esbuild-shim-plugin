@@ -3,14 +3,14 @@
 [![CI](https://github.com/shahradelahi/esbuild-shim-plugin/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/shahradelahi/esbuild-shim-plugin/actions/workflows/ci.yml)
 [![NPM Version](https://img.shields.io/npm/v/esbuild-shim-plugin.svg)](https://www.npmjs.com/package/esbuild-shim-plugin)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](/LICENSE)
-[![Install Size](https://packagephobia.com/badge?p=esbuild-shim-plugin)](https://packagephobia.com/result?p=esbuild-shim-plugin)
+![npm bundle size](https://img.shields.io/bundlephobia/min/esbuild-shim-plugin?label=bundle%20size)
 
 _esbuild-shim-plugin_ is an [esbuild](https://esbuild.github.io/) plugin that polyfills support for the `import.meta.url` property for [ESM modules](https://nodejs.org/api/esm.html) and the `require`, `__filename`, and `__dirname` properties for [CommonJS modules](https://nodejs.org/api/modules.html).
 
 ## 📦 Installation
 
 ```sh
-pnpm i -D esbuild-shim-plugin
+pnpm i -D esbuild-shim-plugin esbuild
 ```
 
 ## 📖 Usage

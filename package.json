@@ -54,7 +54,7 @@
     "eslint": "^10.8.0",
     "prettier": "^3.9.6",
     "tsup": "^8.5.1",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.0"
   },
   "peerDependencies": {
     "esbuild": ">=0.18.0"
